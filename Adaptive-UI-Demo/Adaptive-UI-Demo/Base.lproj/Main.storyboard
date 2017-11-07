@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_UI_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-nB-ZKa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="390"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7S-75-DVV">
+                                <rect key="frame" x="0.0" y="410" width="375" height="257"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PSD T-Shirt Mockup Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50O-f2-BEn">
+                                        <rect key="frame" x="15" y="15" width="345" height="32"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pth-B3-Ihm">
+                                        <rect key="frame" x="15" y="65" width="345" height="182"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="182" id="e5k-GB-oOS"/>
+                                        </constraints>
+                                        <string key="text">This is a free psd T-shirt mockup provided by pixeden.com. The PSD comes with a plain simple tee-shirt mockup template. You can edit the t-shirt color and use the smart layer to apply your designs. The high-resolution makes it easy to frame specific details with close-ups</string>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="50O-f2-BEn" firstAttribute="top" secondItem="T7S-75-DVV" secondAttribute="top" constant="15" id="CqM-0U-kua"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pth-B3-Ihm" secondAttribute="bottom" constant="10" id="I8L-Ef-CPo"/>
+                                    <constraint firstItem="Pth-B3-Ihm" firstAttribute="leading" secondItem="T7S-75-DVV" secondAttribute="leading" constant="15" id="KDV-fE-Coo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pth-B3-Ihm" secondAttribute="trailing" constant="15" id="PHy-nc-bIw"/>
+                                    <constraint firstItem="50O-f2-BEn" firstAttribute="leading" secondItem="T7S-75-DVV" secondAttribute="leading" constant="15" id="hBp-jh-gup"/>
+                                    <constraint firstAttribute="width" constant="375" id="n6i-eI-Uhr"/>
+                                    <constraint firstAttribute="trailing" secondItem="50O-f2-BEn" secondAttribute="trailing" constant="15" id="rC8-6V-M02"/>
+                                    <constraint firstItem="Pth-B3-Ihm" firstAttribute="top" secondItem="50O-f2-BEn" secondAttribute="bottom" constant="18" id="yWw-3M-AgK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T7S-75-DVV" secondAttribute="bottom" id="273-2b-Weu"/>
+                            <constraint firstItem="T7S-75-DVV" firstAttribute="top" secondItem="cFY-nB-ZKa" secondAttribute="bottom" id="7Ee-Fz-fAB"/>
+                            <constraint firstItem="cFY-nB-ZKa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="J2v-sn-v8N"/>
+                            <constraint firstItem="cFY-nB-ZKa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NAa-fM-dvV"/>
+                            <constraint firstItem="cFY-nB-ZKa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.585" id="Qdf-On-yEF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T7S-75-DVV" secondAttribute="trailing" id="nhk-9g-5AH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cFY-nB-ZKa" secondAttribute="trailing" id="uFr-iA-zsM"/>
+                            <constraint firstItem="T7S-75-DVV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vBs-76-fAR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="34.632683658170919"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tshirt" width="512" height="432"/>
+    </resources>
 </document>
